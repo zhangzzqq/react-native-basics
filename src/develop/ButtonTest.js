@@ -7,7 +7,7 @@ import {
     Text,
     Alert,
 } from 'react-native';
-import Constants from 'expo-constants';
+// import Constants from 'expo-constants';
 
 function Separator() {
     return <View style={styles.separator} />;
@@ -73,7 +73,7 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: Constants.statusBarHeight,
+        // marginTop: Constants.statusBarHeight,
         marginHorizontal: 16,
     },
     title: {
