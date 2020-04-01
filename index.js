@@ -9,7 +9,8 @@ import {name as appName} from './app.json';
 // import App from './es6Study/Reactlifecycle';
 // import App from './src/normal/placeholder';
 // import App from './src/foundation/ButtonTest';
-import App from './src/develop/FlatListTest';
+// import App from './src/develop/FlatListTest';
+import App from './src/fresh/FreshTest';
 
 
 AppRegistry.registerComponent(appName, () => App);
