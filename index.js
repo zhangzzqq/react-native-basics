@@ -10,7 +10,8 @@ import {name as appName} from './app.json';
 // import App from './src/normal/placeholder';
 // import App from './src/foundation/ButtonTest';
 // import App from './src/develop/FlatListTest';
-import App from './src/fresh/FreshTest';
+// import App from './src/fresh/FreshTest';
+import App from './src/foundation/Hello';
 
 
 AppRegistry.registerComponent(appName, () => App);
