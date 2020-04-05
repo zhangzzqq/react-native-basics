@@ -11,7 +11,9 @@ import {name as appName} from './app.json';
 // import App from './src/foundation/ButtonTest';
 // import App from './src/develop/FlatListTest';
 // import App from './src/fresh/FreshTest';
-import App from './src/foundation/Hello';
+// import App from './src/foundation/Hello4';
+import App from './src/foundation/SectionListTest';
+// import App from './src/redux/Test';
 
 
 AppRegistry.registerComponent(appName, () => App);

@@ -8,12 +8,21 @@ import {
 
 class App extends Component {
     state = {
-        count: 0
+        count: 0,
+        obj:{counts:0},
+
+
     }
+
 
     onPress = () => {
         this.setState({
-            count: this.state.count + 1
+            count:this.state.count + 1,
+            obj: Object.assign({}, this.state.obj,
+                { counts: this.state.obj.counts + 1}
+
+                )
+
         })
     }
 
@@ -26,9 +35,10 @@ class App extends Component {
                 >
                     <Text>Click me</Text>
                 </TouchableOpacity>
-                <View >
+                <View style={styles.countContainer}>
                     <Text>
-                        You clicked { this.state.count } times
+                        {/*You clicked { this.state.count } times*/}
+                        You clicked { this.state.obj.counts } times
                     </Text>
                 </View>
             </View>
@@ -46,7 +56,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#DDDDDD',
         padding: 10,
-        marginBottom: '10'
+        // marginEnd: '10'
     }
 })
 

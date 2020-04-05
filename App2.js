@@ -12,7 +12,7 @@ import { NativeEventEmitter } from 'react-native';
 
 export default class ButtonBasics extends Component {
   //注册监听
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
 
     DeviceEventEmitter.addListener('EventName', function (msg) {
       console.log(msg);

@@ -19,7 +19,7 @@ export default class Main extends Component {
     }
 
 //准备加载组件
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         console.log('componentWillMount222222222222222222');
     }
 
@@ -41,7 +41,7 @@ export default class Main extends Component {
     }
 
 //组件接收到新的 props 时触发
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         console.log('componentWillReceiveProps');
     }
 
@@ -51,7 +51,7 @@ export default class Main extends Component {
     }
 
 //组件重新渲染前会调用
-    componentWillUpdate(nextProps, nextState) {
+    UNSAFE_componentWillUpdate(nextProps, nextState) {
         console.log('componentWillUpdate');
     }
 
