@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { SectionList, StyleSheet, Text, View } from 'react-native';
+import {useDarkMode} from 'react-native-dark-mode';
+import { initialMode } from 'react-native-dark-mode'
 
 export default class SectionListBasics extends Component {
     render() {
+        // let isDarkMode = useDarkMode();
+        // console.log('isDarkMode=='+isDarkMode);
+        console.log('-----------------')
+        console.log('App started in', initialMode, 'mode')
+        console.log('-----------------')
         return (
             <View style={styles.container}>
                 <SectionList

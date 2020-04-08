@@ -3,8 +3,8 @@ import { View, Text, Button } from 'react-native';
 import { createAppContainer, StackActions, NavigationActions }
 from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import HomeScreen from "./src/pages/home/HomePage";
-import DetailsScreen from "./src/pages/my/MyPage";
+import HomeScreen from "../pages/home/HomePage";
+import DetailsScreen from "../pages/my/MyPage";
 
 const AppNavigator = createStackNavigator({
     Home: {

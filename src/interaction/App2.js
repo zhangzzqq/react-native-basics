@@ -4,7 +4,7 @@ import {
   DeviceEventEmitter, ToastAndroid,
   NativeModules,
 } from 'react-native';
-import ToastExample from "./ToastExample";
+import ToastExample from "../../ToastExample";
 // var { NativeModules } = require('react-native');
 // var storeModule=NativeModules.StoreModule;
 import { NativeEventEmitter } from 'react-native';
