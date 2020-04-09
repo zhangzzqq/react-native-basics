@@ -25,7 +25,7 @@
 //     return (
 //     <div>
 //     <Name name={this.state.name} />
-//     <Link site={this.state.site} />
+//     <ChooseButton site={this.state.site} />
 //     </div>
 //     );
 // }
@@ -40,7 +40,7 @@
 // }
 // }
 //
-//     class Link extends React.Component {
+//     class ChooseButton extends React.Component {
 //     render() {
 //     return (
 //     <a href={this.props.site}>

@@ -1,0 +1,31 @@
+import React, {Component} from 'react';
+import {Button, TextInput, View} from 'react-native';
+import {connect} from 'react-redux';
+import {addTodo} from '../actions';
+
+
+class AddTodo extends Component {
+
+    constructor(props) {
+        super(props);
+        this.inputValue = '';
+
+    }
+
+    render() {
+        let {dispatch} = this.props;
+        return (<View style={{flexDirection: 'row'}}>
+            <TextInput
+                style={{flex: 1, borderWidth: 1, borderColor: '#cccccc', textAlign: 'center'}}
+                onChangeText={text => this.inputValue = text}
+            />
+            <Button title="Add TodoItem" onPress={() => dispatch(addTodo(this.inputValue))}/>
+        </View>);
+
+    }
+
+}
+
+export default connect()(AddTodo);
+
+
