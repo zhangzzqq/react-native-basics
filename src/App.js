@@ -1,6 +1,8 @@
+
 /**
  * @format
  */
+
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
@@ -12,8 +14,9 @@ import {name as appName} from './app.json';
 // import App from './src/develop/FlatListTest';
 // import App from './src/fresh/FreshTest';
 // import App from './src/foundation/Hello4';
-// import App from './src/foundation/SectionListTest';
+import App from './src/foundation/SectionListTest';
+// import App from './src/darkmodel/ThemeDemo';
 // import App from './src/redux/Test';
- import App from './src/redux2/App';
+
 
 AppRegistry.registerComponent(appName, () => App);
