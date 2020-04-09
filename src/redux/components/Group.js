@@ -7,10 +7,16 @@ import AddTodo from '../containers/AddTodo';
 export default class Group extends Component {
 
     render() {
+
         return (<View style= {{paddingHorizontal: 20, paddingVertical: 44}} >
+
                 <AddTodo/>
+
                 <SortButton/>
+
                 <VisibleTodoList/>
+
+
             </View>
         );
     }
