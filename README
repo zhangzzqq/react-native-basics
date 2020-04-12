@@ -21,3 +21,8 @@ import App from './src/foundation/SectionListTest';
 
 
 AppRegistry.registerComponent(appName, () => App);
+
+
+导航
+https://reactnavigation.org/docs/params
+

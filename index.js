@@ -14,6 +14,10 @@ import {name as appName} from './app.json';
 // import App from './src/foundation/Hello4';
 // import App from './src/foundation/SectionListTest';
 // import App from './src/redux/Test';
- import App from './src/redux2/App';
+//  import App from './src/redux2/App';
+// import App from './src/navigation/App'
+// import App from './src/navigation/tab/Test'
+// import App from './src/navigation/tab2/TabNavigator'
+import App from './src/redux0/App'
 
 AppRegistry.registerComponent(appName, () => App);

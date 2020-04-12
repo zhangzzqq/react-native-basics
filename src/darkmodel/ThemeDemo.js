@@ -105,7 +105,7 @@ export default class ThemeDemo extends React.Component {
 
     _onPressButton() {
         // alert('You tapped the button!')
-        Component();
+        // Component();
     }
 
 }

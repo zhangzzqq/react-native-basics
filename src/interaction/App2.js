@@ -17,10 +17,7 @@ export default class ButtonBasics extends Component {
     DeviceEventEmitter.addListener('EventName', function (msg) {
       console.log(msg);
       alert("send success");
-
-
     });
-
 
   }
   // componentWillMount() {

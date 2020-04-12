@@ -1,0 +1,11 @@
+APP包含这几个页面:Input Title  List
+store
+todoListRedux :action redux
+
+
+修改数据
+store.dispatch(actionCreators.add(text))   ,store已经reducer绑定
+
+更新数据
+
+
