@@ -37,6 +37,12 @@ function HomeScreen({navigation,route}) {
             <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
 
 
+            <Button
+                title="Go to Profile"
+                onPress={() =>
+                    navigation.navigate('Profile', { name: 'Custom profile header' })
+                }
+            />
             {/*<Button title="Go back" onPress={() => navigation.exit()} />*/}
         </View>
     );
@@ -66,17 +72,25 @@ function DetailsScreen({route,navigation}) {
             />
 
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')}/>
+
             <Button title="Go back" onPress={() => navigation.goBack()}/>
 
             <Button
                 title="Go back to first screen in stack"
                 onPress={() => navigation.popToTop()}
             />
+
+            <Button
+                title="Update the title"
+                onPress={() => navigation.setOptions({ title: 'Updated!' })}
+            />
+
+
         </View>
     );
 }
 
-function CreatePostScreen({ navigation, route }) {
+function CreatePostScreen({ navigation }) {
     const [postText, setPostText] = React.useState('');
 
     return (
@@ -99,20 +113,56 @@ function CreatePostScreen({ navigation, route }) {
     );
 }
 
+function ProfileScreen({ navigation ,route }) {
+    console.log('----route.params---')
+    console.log(route)
+    console.log(route.params)
+
+    return (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Profile screen</Text>
+            <Button title="Go back" onPress={() => navigation.goBack()} />
+        </View>
+    );
+}
+
+
 
 const Stack = createStackNavigator();
 
 function App() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator
+
+                screenOptions={{
+                    headerStyle: {
+                        backgroundColor: '#f4511e',
+                    },
+                    headerTintColor: '#fff',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                }}
+
+            >
 
                 <Stack.Screen name="Home" component={HomeScreen}
-                              options={{title: 'Overview'}}/>
-                <Stack.Screen name="Details" component={DetailsScreen}/>
-                <Stack.Screen name="CreatePost" component={CreatePostScreen}/>
-                {/*{props => <HomeScreen {...props} extraData={someData} />}*/}
+                              options={{title: 'Overview',
 
+
+
+                              }}/>
+                <Stack.Screen name="Details" component={DetailsScreen}/>
+                <Stack.Screen name="CreatePost" component={CreatePostScreen}
+
+                />
+                {/*{props => <HomeScreen {...props} extraData={someData} />}*/}
+                <Stack.Screen
+                    name="Profile"
+                    component={ProfileScreen}
+                    options={({ route }) => ({ title: route.params.name })}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     );
