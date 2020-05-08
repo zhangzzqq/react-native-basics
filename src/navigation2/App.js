@@ -1,7 +1,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import {Button, Text, TextInput, View} from 'react-native';
+import {Button, Image, Text, TextInput, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -126,6 +126,15 @@ function ProfileScreen({ navigation ,route }) {
     );
 }
 
+function LogoTitle() {
+    return (
+        <Image
+            style={{ width: 50, height: 50 }}
+            // source={require('src/image/test.png')}
+        />
+    );
+}
+
 
 
 const Stack = createStackNavigator();
@@ -150,7 +159,7 @@ function App() {
                 <Stack.Screen name="Home" component={HomeScreen}
                               options={{title: 'Overview',
 
-
+                                  headerTitle: props => <LogoTitle {...props} />
 
                               }}/>
                 <Stack.Screen name="Details" component={DetailsScreen}/>
