@@ -4,6 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
+import 'react-native-gesture-handler';
 // import 'react-native-gesture-handler';//navigation 导航
 // import App from './App2';
 // import App from './es6Study/Reactlifecycle';
@@ -20,5 +21,6 @@ import {name as appName} from './app.json';
 // import App from './src/navigation/tab2/TabNavigator'
 // import App from './src/redux0/App'
 // import App from './src/lifeStyle/Welcome'
-import App from './src/navigation2/App';
+// import App from './src/navigation2/App';
+import App from './src/navigation2/FullScreen';
 AppRegistry.registerComponent(appName, () => App);

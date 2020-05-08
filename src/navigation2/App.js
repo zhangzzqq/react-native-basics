@@ -4,7 +4,6 @@ import * as React from 'react';
 import {Button, Image, Text, TextInput, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
 function HomeScreen({navigation,route}) {
 
     React.useEffect(() => {
@@ -14,7 +13,7 @@ function HomeScreen({navigation,route}) {
         }
     }, [route.params?.post]);
 
-
+    const [count, setCount] = React.useState(0);
     return (
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text>Home Screen</Text>
@@ -130,7 +129,7 @@ function LogoTitle() {
     return (
         <Image
             style={{ width: 50, height: 50 }}
-            // source={require('src/image/test.png')}
+            source={require('../image/test.png')}
         />
     );
 }
@@ -153,19 +152,16 @@ function App() {
                         fontWeight: 'bold',
                     },
                 }}
-
             >
 
                 <Stack.Screen name="Home" component={HomeScreen}
                               options={{title: 'Overview',
-
                                   headerTitle: props => <LogoTitle {...props} />
-
                               }}/>
-                <Stack.Screen name="Details" component={DetailsScreen}/>
-                <Stack.Screen name="CreatePost" component={CreatePostScreen}
 
-                />
+                <Stack.Screen name="Details" component={DetailsScreen}/>
+                <Stack.Screen name="CreatePost" component={CreatePostScreen}/>
+
                 {/*{props => <HomeScreen {...props} extraData={someData} />}*/}
                 <Stack.Screen
                     name="Profile"
