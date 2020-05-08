@@ -18,6 +18,7 @@ import {name as appName} from './app.json';
 // import App from './src/navigation/App'
 // import App from './src/navigation/tab/Test'
 // import App from './src/navigation/tab2/TabNavigator'
-import App from './src/redux0/App'
-
+// import App from './src/redux0/App'
+// import App from './src/lifeStyle/Welcome'
+import App from './src/navigation2/App';
 AppRegistry.registerComponent(appName, () => App);
