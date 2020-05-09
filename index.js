@@ -25,5 +25,6 @@ import 'react-native-gesture-handler';
 // import App from './src/navigation2/TabNavigation';
 // import App from './src/navigation2/DrawerNavigation';
 // import App from './src/navigation2/BottomTabNavigator';
-import App from './src/navigation2/MaterialBottomTab';
+// import App from './src/navigation2/MaterialBottomTab';
+import App from './src/navigation2/MaterialTopTabNavigator';
 AppRegistry.registerComponent(appName, () => App);

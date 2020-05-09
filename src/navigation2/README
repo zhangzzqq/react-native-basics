@@ -12,3 +12,38 @@ https://reactnavigation.org/docs/modal
 tab标签
 https://reactnavigation.org/docs/tab-based-navigation/
 
+底部导航
+BottomTabNavigator
+MaterialBottomTab
+https://reactnavigation.org/docs/material-top-tab-navigator
+1 创建对象
+const Tab = createBottomTabNavigator();
+2 标签
+  2.1 <NavigationContainer>
+            <MyTabs />
+        </NavigationContainer>
+
+ 2.2
+ <Tab.Navigator
+            initialRouteName="Feed"
+            tabBarOptions={{
+                activeTintColor: '#e91e63',
+            }}
+        >
+        <Tab.Navigator/>
+    <Tab.Screen><Tab.Screen/>
+
+
+ 3
+  <Tab.Screen
+                 name="Feed"
+                 component={Feed}
+                 options={{
+                     tabBarLabel: 'Home',
+                     // tabBarIcon: ({ color, size }) => (
+                     //     <MaterialCommunityIcons name="home" color={color} size={size} />
+                     // ),
+                 }}
+             />
+
+

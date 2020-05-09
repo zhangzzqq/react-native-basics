@@ -1159,6 +1159,13 @@
   resolved "https://registry.npm.taobao.org/@react-navigation/material-bottom-tabs/download/@react-navigation/material-bottom-tabs-5.2.1.tgz#5a25ccccba31b96d16408fd865b424592071c8d8"
   integrity sha1-WiXMzLoxuW0WQI/YZbQkWSBxyNg=
 
+"@react-navigation/material-top-tabs@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.npm.taobao.org/@react-navigation/material-top-tabs/download/@react-navigation/material-top-tabs-5.2.1.tgz#ab1d8c4366c824fc6ccb709dd25cfd8068ab149f"
+  integrity sha1-qx2MQ2bIJPxsy3Cd0lz9gGirFJ8=
+  dependencies:
+    color "^3.1.2"
+
 "@react-navigation/native@^3.7.11":
   version "3.7.11"
   resolved "https://registry.npm.taobao.org/@react-navigation/native/download/@react-navigation/native-3.7.11.tgz#00aa5d8187b346b16a5d2e9d1e32413c78bc4ad4"
@@ -7337,6 +7344,11 @@ react-native-status-bar-height@^2.2.0:
   version "2.5.0"
   resolved "https://registry.npm.taobao.org/react-native-status-bar-height/download/react-native-status-bar-height-2.5.0.tgz#bc0fb85230603850aab9667ee8111a62954de90c"
   integrity sha1-vA+4UjBgOFCquWZ+6BEaYpVN6Qw=
+
+react-native-tab-view@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.npm.taobao.org/react-native-tab-view/download/react-native-tab-view-2.14.0.tgz?cache=0&sync_timestamp=1586262912072&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-native-tab-view%2Fdownload%2Freact-native-tab-view-2.14.0.tgz#dd801f82fdb8e92fce9688b78d13923f3a5a2b3f"
+  integrity sha1-3YAfgv246S/Oloi3jROSPzpaKz8=
 
 react-native-theming@^1.0.18:
   version "1.0.18"
