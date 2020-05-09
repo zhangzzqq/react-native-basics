@@ -697,6 +697,14 @@
   resolved "https://registry.npm.taobao.org/@bcoe/v8-coverage/download/@bcoe/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha1-daLotRy3WKdVPWgEpZMteqznXDk=
 
+"@callstack/react-theme-provider@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.npm.taobao.org/@callstack/react-theme-provider/download/@callstack/react-theme-provider-3.0.5.tgz#a173e455e9603c9c45357a3b6ace1273086527ca"
+  integrity sha1-oXPkVelgPJxFNXo7as4ScwhlJ8o=
+  dependencies:
+    deepmerge "^3.2.0"
+    hoist-non-react-statics "^3.3.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/@cnakazawa/watch/download/@cnakazawa/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -711,6 +719,13 @@
   integrity sha1-XcAq91pqBuTC2wICyuOMkmOJUSQ=
   dependencies:
     "@types/hammerjs" "^2.0.36"
+
+"@expo/vector-icons@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.npm.taobao.org/@expo/vector-icons/download/@expo/vector-icons-10.2.0.tgz#3c70656683a6a873e18efc00bc61fc160a80dc55"
+  integrity sha1-PHBlZoOmqHPhjvwAvGH8FgqA3FU=
+  dependencies:
+    lodash "^4.17.4"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1131,13 +1146,18 @@
     react-is "^16.13.0"
     use-subscription "^1.4.0"
 
-"@react-navigation/drawer@^5.4.1":
-  version "5.4.1"
-  resolved "https://registry.npm.taobao.org/@react-navigation/drawer/download/@react-navigation/drawer-5.4.1.tgz#381bed18422b75f5e2c69455a85390564e6d3584"
-  integrity sha1-OBvtGEIrdfXixpRVqFOQVk5tNYQ=
+"@react-navigation/drawer@^5.7.1":
+  version "5.7.1"
+  resolved "https://registry.npm.taobao.org/@react-navigation/drawer/download/@react-navigation/drawer-5.7.1.tgz#525f64695d2c2deaa887b8815b982e56b78e74e7"
+  integrity sha1-Ul9kaV0sLeqoh7iBW5guVreOdOc=
   dependencies:
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
+
+"@react-navigation/material-bottom-tabs@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.npm.taobao.org/@react-navigation/material-bottom-tabs/download/@react-navigation/material-bottom-tabs-5.2.1.tgz#5a25ccccba31b96d16408fd865b424592071c8d8"
+  integrity sha1-WiXMzLoxuW0WQI/YZbQkWSBxyNg=
 
 "@react-navigation/native@^3.7.11":
   version "3.7.11"
@@ -3323,6 +3343,14 @@ expo-file-system@~8.0.0:
   dependencies:
     uuid-js "^0.7.5"
 
+expo-font@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.npm.taobao.org/expo-font/download/expo-font-8.1.1.tgz#40de629d7332887bdafae4756741f6979fc0043e"
+  integrity sha1-QN5inXMyiHva+uR1Z0H2l5/ABD4=
+  dependencies:
+    fbjs "1.0.0"
+    fontfaceobserver "^2.1.0"
+
 expo-permissions@~8.0.0:
   version "8.0.0"
   resolved "https://registry.npm.taobao.org/expo-permissions/download/expo-permissions-8.0.0.tgz?cache=0&sync_timestamp=1585221330465&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fexpo-permissions%2Fdownload%2Fexpo-permissions-8.0.0.tgz#5a45e8451dd7ff37c9e6ce5e2447818372547813"
@@ -3455,12 +3483,13 @@ fbjs-scripts@^1.1.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.9:
-  version "0.8.17"
-  resolved "https://registry.npm.taobao.org/fbjs/download/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
-  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
+fbjs@1.0.0, fbjs@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/fbjs/download/fbjs-1.0.0.tgz#52c215e0883a3c86af2a7a776ed51525ae8e0a5a"
+  integrity sha1-UsIV4Ig6PIavKnp3btUVJa6OClo=
   dependencies:
-    core-js "^1.0.0"
+    core-js "^2.4.1"
+    fbjs-css-vars "^1.0.0"
     isomorphic-fetch "^2.1.1"
     loose-envify "^1.0.0"
     object-assign "^4.1.0"
@@ -3468,13 +3497,12 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
 
-fbjs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/fbjs/download/fbjs-1.0.0.tgz#52c215e0883a3c86af2a7a776ed51525ae8e0a5a"
-  integrity sha1-UsIV4Ig6PIavKnp3btUVJa6OClo=
+fbjs@^0.8.9:
+  version "0.8.17"
+  resolved "https://registry.npm.taobao.org/fbjs/download/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
+  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
   dependencies:
-    core-js "^2.4.1"
-    fbjs-css-vars "^1.0.0"
+    core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
     loose-envify "^1.0.0"
     object-assign "^4.1.0"
@@ -3607,6 +3635,11 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+fontfaceobserver@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/fontfaceobserver/download/fontfaceobserver-2.1.0.tgz#e2705d293e2c585a6531c2a722905657317a2991"
+  integrity sha1-4nBdKT4sWFplMcKnIpBWVzF6KZE=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -7259,6 +7292,15 @@ react-native-iphone-x-helper@^1.2.1:
   resolved "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
   integrity sha1-ZF4v+7tJ6AhEu0y740oSb9oeZ3I=
 
+react-native-paper@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.npm.taobao.org/react-native-paper/download/react-native-paper-3.10.1.tgz#4fca72b9f154fc5ad3710d633787c55e878e8f36"
+  integrity sha1-T8pyufFU/FrTcQ1jN4fFXoeOjzY=
+  dependencies:
+    "@callstack/react-theme-provider" "^3.0.5"
+    color "^3.1.2"
+    react-native-safe-area-view "^0.14.9"
+
 react-native-ratings@^6.3.0:
   version "6.5.0"
   resolved "https://registry.npm.taobao.org/react-native-ratings/download/react-native-ratings-6.5.0.tgz#a1606ccba3c5b54eec8e6cfa4765a45cf0e4ab8d"
@@ -7279,7 +7321,7 @@ react-native-safe-area-context@^0.7.3:
   resolved "https://registry.npm.taobao.org/react-native-safe-area-context/download/react-native-safe-area-context-0.7.3.tgz#ad6bd4abbabe195332c53810e4ce5851eb21aa2a"
   integrity sha1-rWvUq7q+GVMyxTgQ5M5YUeshqio=
 
-react-native-safe-area-view@^0.14.8:
+react-native-safe-area-view@^0.14.8, react-native-safe-area-view@^0.14.9:
   version "0.14.9"
   resolved "https://registry.npm.taobao.org/react-native-safe-area-view/download/react-native-safe-area-view-0.14.9.tgz#90ee8383037010d9a5055a97cf97e4c1da1f0c3d"
   integrity sha1-kO6DgwNwENmlBVqXz5fkwdofDD0=

@@ -15,7 +15,7 @@ import 'react-native-gesture-handler';
 // import App from './src/foundation/Hello4';
 // import App from './src/foundation/SectionListTest';
 // import App from './src/redux/Test';
-//  import App from './src/redux2/App';
+// import App from './src/redux2/App';
 // import App from './src/navigation/App'
 // import App from './src/navigation/tab/Test'
 // import App from './src/navigation/tab2/TabNavigator'
@@ -24,5 +24,6 @@ import 'react-native-gesture-handler';
 // import App from './src/navigation2/App';
 // import App from './src/navigation2/TabNavigation';
 // import App from './src/navigation2/DrawerNavigation';
-import App from './src/navigation2/StackNavigation';
+// import App from './src/navigation2/BottomTabNavigator';
+import App from './src/navigation2/MaterialBottomTab';
 AppRegistry.registerComponent(appName, () => App);
