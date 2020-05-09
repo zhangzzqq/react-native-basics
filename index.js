@@ -22,5 +22,5 @@ import 'react-native-gesture-handler';
 // import App from './src/redux0/App'
 // import App from './src/lifeStyle/Welcome'
 // import App from './src/navigation2/App';
-import App from './src/navigation2/FullScreen';
+import App from './src/navigation2/TabNavigation';
 AppRegistry.registerComponent(appName, () => App);

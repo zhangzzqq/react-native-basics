@@ -5,3 +5,10 @@ https://reactnavigation.org/docs/getting-started/
 页面跳转传值,修改标题样式
 https://reactnavigation.org/docs/headers
 
+要更改堆栈导航器上的过渡类型，您可以使用mode道具。设置modal为时，所有屏幕从下到上而不是从右到左进行动画显示。这适用于整个堆栈导航器，因此要在其他屏幕上使用从右到左的过渡，我们将添加具有默认配置的另一个导航堆栈。
+navigation.navigate遍历导航器树以找到可以处理该navigate操作的导航器。
+https://reactnavigation.org/docs/modal
+
+tab标签
+https://reactnavigation.org/docs/tab-based-navigation/
+
