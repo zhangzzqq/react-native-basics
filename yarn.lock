@@ -4121,6 +4121,11 @@ image-size@^0.6.0:
   resolved "https://registry.npm.taobao.org/image-size/download/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
   integrity sha1-5+XGW7U0vXzc7dbLUWYnKoX3X7I=
 
+immutability-helper@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npm.taobao.org/immutability-helper/download/immutability-helper-3.1.1.tgz?cache=0&sync_timestamp=1590975440904&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmutability-helper%2Fdownload%2Fimmutability-helper-3.1.1.tgz#2b86b2286ed3b1241c9e23b7b21e0444f52f77b7"
+  integrity sha1-K4ayKG7TsSQcniO3sh4ERPUvd7c=
+
 import-fresh@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/import-fresh/download/import-fresh-2.0.0.tgz?cache=0&sync_timestamp=1573665120798&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimport-fresh%2Fdownload%2Fimport-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"

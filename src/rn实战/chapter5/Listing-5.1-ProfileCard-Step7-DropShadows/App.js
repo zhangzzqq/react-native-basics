@@ -7,7 +7,7 @@ export default class App extends Component<{}> {
             <View style={styles.container}>
                 <View style={styles.cardContainer}>
                     <View style={styles.cardImageContainer}>
-                        <Image style={styles.cardImage} source={require('./user.png')}/>
+                        <Image style={styles.cardImage} source={require('../image/user.png')}/>
                     </View>
                     <View>
                         <Text style={styles.cardName}>

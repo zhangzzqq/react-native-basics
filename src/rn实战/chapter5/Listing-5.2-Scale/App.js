@@ -16,6 +16,7 @@ export default class App extends Component<{}> {
 }
 
 const Example = (props) => (
+
     <View style={[styles.example,props.style]}>
         <Text>
             {props.children}
@@ -25,7 +26,7 @@ const Example = (props) => (
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 75,
+        marginTop: 25,
         alignItems: 'center',
         flex: 1
     },

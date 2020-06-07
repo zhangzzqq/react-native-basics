@@ -34,5 +34,7 @@ import 'react-native-gesture-handler';
 // import App from './src/chapter4/Listing-4.19-TextStyling/App';
 // import App from './src/button/test';
 // import App from './src/textinput/textinput';
-import App from './src/textinput/textinput';
+// import App from './src/textinput/textinput';
+// import App from './src/rn实战/chapter5/Listing-5.7-JustifyContent/App';
+import App from './src/rn实战/chapter5/figures/Figure-5.12-BackfaceVisibility/App';
 AppRegistry.registerComponent(appName, () => App);

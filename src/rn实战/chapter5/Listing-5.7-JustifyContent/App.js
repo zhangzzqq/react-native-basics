@@ -5,18 +5,18 @@ export default class App extends Component<{}> {
     render() {
         return (
             <View style={styles.container}>
-                <FlexContainer style={[{justifyContent: 'center'}]}>
-                    <Example>center</Example>
-                    <Example>center</Example>
-                </FlexContainer>
-                <FlexContainer style={[{justifyContent: 'flex-start'}]}>
-                    <Example>flex-start</Example>
-                    <Example>flex-start</Example>
-                </FlexContainer>
-                <FlexContainer style={[{justifyContent: 'flex-end'}]}>
-                    <Example>flex-end</Example>
-                    <Example>flex-end</Example>
-                </FlexContainer>
+                {/*<FlexContainer style={[{justifyContent: 'center'}]}>*/}
+                {/*    <Example>center</Example>*/}
+                {/*    <Example>center</Example>*/}
+                {/*</FlexContainer>*/}
+                {/*<FlexContainer style={[{justifyContent: 'flex-start'}]}>*/}
+                {/*    <Example>flex-start</Example>*/}
+                {/*    <Example>flex-start</Example>*/}
+                {/*</FlexContainer>*/}
+                {/*<FlexContainer style={[{justifyContent: 'flex-end'}]}>*/}
+                {/*    <Example>flex-end</Example>*/}
+                {/*    <Example>flex-end</Example>*/}
+                {/*</FlexContainer>*/}
                 <FlexContainer style={[{justifyContent: 'space-around'}]}>
                     <Example>space-around</Example>
                     <Example>space-around</Example>
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 50,
         alignItems: 'center',
-        flex: 1
+        flex: 1,
+        flexDirection:'row'
     },
     flexContainer: {
         alignItems: 'stretch',

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import update from 'immutability-helper';
 import { Image, Platform, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 
-const userImage = require('./user.png');
+const userImage = require('../image/user.png');
 
 const data = [{
     image: userImage,
@@ -20,6 +20,17 @@ const data = [{
 const ProfileCard = (props) => {
 
   const { image, name, occupation, description, onPress, showThumbnail } = props;
+ let a =  Object.prototype.toString.call(image)
+  let b = Object.prototype.toString.call(name)
+// alert('a=='+a)
+// alert(b)
+//   console.log(image)
+//   console.log(name)
+//   console.log(occupation)
+//   console.log(description)
+//   console.log(onPress)
+//   console.log(showThumbnail)
+
   let containerStyles = [styles.cardContainer];
 
   if (showThumbnail) {
@@ -27,7 +38,7 @@ const ProfileCard = (props) => {
   }
 
   return (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight onPress={onPress} underlayColor={'#fff'}>
       <View style={[containerStyles]}>
         <View style={styles.cardImageContainer}>
           <Image style={styles.cardImage} source={image}/>
@@ -53,8 +64,8 @@ const ProfileCard = (props) => {
 };
 
 ProfileCard.propTypes = {
-  image: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.number.isRequired,
   occupation: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   showThumbnail: PropTypes.bool.isRequired,
@@ -73,7 +84,9 @@ export default class App extends Component<{}> {
   handleProfileCardPress = (index) => {
 
     const showThumbnail = !this.state.data[index].showThumbnail;
-
+  console.log('---{[index]: {showThumbnail: {$set: showThumbnail}}}---')
+  console.log({[index]: {showThumbnail: {$set: showThumbnail}}})
+  console.log({$set: showThumbnail})
     this.setState({
       data: update(this.state.data, {[index]: {showThumbnail: {$set: showThumbnail}}})
     });
@@ -103,7 +116,7 @@ const profileCardColor = 'dodgerblue';
 
 const styles = StyleSheet.create({
   cardThumbnail: {
-    transform: [{scale: 0.2}]
+    transform: [{scale: 0.5}]
   },
   container: {
     backgroundColor: 'white',
