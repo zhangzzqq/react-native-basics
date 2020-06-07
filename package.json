@@ -41,7 +41,8 @@
     "react-native-vector-icons": "latest",
     "react-navigation": "^4.2.2",
     "react-navigation-stack": "^2.2.3",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "uuid": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

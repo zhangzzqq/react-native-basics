@@ -5,6 +5,8 @@
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
 import 'react-native-gesture-handler';
+// console.ignoredYellowBox = ['Warning', 'Remote']
+
 // import 'react-native-gesture-handler';//navigation 导航
 // import App from './App2';
 // import App from './es6Study/Reactlifecycle';
@@ -36,5 +38,9 @@ import 'react-native-gesture-handler';
 // import App from './src/textinput/textinput';
 // import App from './src/textinput/textinput';
 // import App from './src/rn实战/chapter5/Listing-5.7-JustifyContent/App';
-import App from './src/rn实战/chapter5/figures/Figure-5.12-BackfaceVisibility/App';
+// import App from './src/rn实战/chapter5/figures/Figure-5.12-BackfaceVisibility/App';
+// import App from './src/rn实战/chapter6/App';
+// AppRegistry.registerComponent(appName, () => App);
+import App from './src/rn实战/chapter7/AnimatedTiming';
+
 AppRegistry.registerComponent(appName, () => App);
