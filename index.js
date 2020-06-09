@@ -41,6 +41,7 @@ import 'react-native-gesture-handler';
 // import App from './src/rn实战/chapter5/figures/Figure-5.12-BackfaceVisibility/App';
 // import App from './src/rn实战/chapter6/App';
 // AppRegistry.registerComponent(appName, () => App);
-import App from './src/rn实战/chapter7/AnimatedTiming';
+// import App from './src/rn实战/chapter7/AnimatedTiming';
+import App from './src/rn实战/chapter8/PanResponder/PanResponder';
 
 AppRegistry.registerComponent(appName, () => App);
