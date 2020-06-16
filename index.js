@@ -42,6 +42,10 @@ import 'react-native-gesture-handler';
 // import App from './src/rn实战/chapter6/App';
 // AppRegistry.registerComponent(appName, () => App);
 // import App from './src/rn实战/chapter7/AnimatedTiming';
-import App from './src/rn实战/chapter8/PanResponder/PanResponder';
+// import App from './src/rn实战/chapter8/PanResponder/PanResponder';
+// import App from './src/flatList/List';
+// import App from './src/webview/webview';
+// import App from './src/foundation2/textStyle';
+import App from './src/foundation2/vibrationTest';
 
 AppRegistry.registerComponent(appName, () => App);
