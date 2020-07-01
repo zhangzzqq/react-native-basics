@@ -1,5 +1,5 @@
 /**
- * App.js
+ * App2.js
  */
 
 import React, {Component} from 'react';

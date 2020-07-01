@@ -1,4 +1,4 @@
-// In App.js in a new project
+// In App2.js in a new project
 
 import * as React from 'react';
 import { View, Text } from 'react-native';

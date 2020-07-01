@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
 
 
 
-// App registration and rendering
+// App2 registration and rendering
 AppRegistry.registerComponent(
     'AwesomeProject',
     () => UselessTextInputMultiline

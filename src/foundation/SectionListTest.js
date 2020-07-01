@@ -8,7 +8,7 @@ export default class SectionListBasics extends Component {
         // let isDarkMode = useDarkMode();
         // console.log('isDarkMode=='+isDarkMode);
         console.log('-----------------')
-        console.log('App started in', initialMode, 'mode')
+        console.log('App2 started in', initialMode, 'mode')
         console.log('-----------------')
         return (
             <View style={styles.container}>
