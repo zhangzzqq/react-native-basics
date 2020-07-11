@@ -1,8 +1,12 @@
 import React, {PureComponent} from 'react';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
 import SegmentedBar from '../component/SegmentedBar'
-import TopNavigator from '../component/TopNavigator'
+// import TopNavigator from '../component/TopNavigator'
 import CinemaPage from '../pages/CinemaPage'
+import Text from 'react-native-paper/src/components/Typography/Text';
+import createMaterialTopTabNavigator
+    from '@react-navigation/material-top-tabs/src/navigators/createMaterialTopTabNavigator';
+import NavigationContainer from '@react-navigation/native/src/NavigationContainer';
 
 export default class MoviesPage extends PureComponent {
 
@@ -28,7 +32,12 @@ export default class MoviesPage extends PureComponent {
 
     renderSegmentView() {
         if (this.state.segmentedIndex === 0) {
-            return (<TopNavigator/>)
+            return (  <NavigationContainer>
+                <Tab.Navigator>
+                    <Tab.Screen name="Home" component={HomeScreen} />
+                    <Tab.Screen name="Settings" component={SettingsScreen} />
+                </Tab.Navigator>
+            </NavigationContainer>)
         } else {
             return (<CinemaPage/>)
         }
@@ -51,3 +60,23 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
     },
 });
+
+
+
+function HomeScreen() {
+    return (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Home!</Text>
+        </View>
+    );
+}
+
+function SettingsScreen() {
+    return (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Settings!</Text>
+        </View>
+    );
+}
+
+const Tab = createMaterialTopTabNavigator();

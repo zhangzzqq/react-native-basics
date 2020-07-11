@@ -51,6 +51,13 @@ import 'react-native-gesture-handler';
 // import App2 from './src/react_native移动开发实战/5.3/5.3.3/SectionListPage';
 // import App from './src/react_native移动开发实战/5.4/5.4.1/ViewPagerAndroidPage';
 // import App2 from './src/react_native移动开发实战/chapter12/App2'
+// import App from './src/react_native移动开发实战/chapter12/src/App2'
+// import App from './src/react_native移动开发实战/chapter3/AlignSelf'
+// import App from './src/react_native移动开发实战/chapter5/5.3/5.3.2/FlatListPage'
+// import App from './src/react_native移动开发实战/chapter6/6.3/6.3.3/AnimatedGesture'
+// import App from './src/react_native移动开发实战/chapter7/7.3/7.3.4/官方示例/CarouselPage'
+// import App from './src/react_native移动开发实战/chapter8/8.1/8.1.3/AsyncPage'
 import App from './src/react_native移动开发实战/chapter12/src/App2'
+// import App from './src/react_native移动开发实战/通信/FatherToSon2'
 
 AppRegistry.registerComponent(appName, () => App);

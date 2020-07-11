@@ -25,3 +25,25 @@ const styles = StyleSheet.create({
 });
 
 export default MyPager
+
+
+alignSelf  针对于组件自己有效
+flex 表示子控件占父控件的比例
+
+父向子传值 在组件中写入变量
+子向父传值，在父组件定义一个方法，把方法传入到子组件 ，子组件点击进行传值
+
+控制自动滚到 在方法里面写循环
+ onScrollBeginDrag={this.handleScrollBegin()}
+ onScrollEndDrag={this.handleScrollEnd()}
+
+    startTimer() {
+        this.timer = setInterval(() => {
+            let currentPage = ++this.state.currentPage === data.data.length ? 0 : this.state.currentPage;
+            this.setState({currentPage: currentPage});
+            let offsetX = currentPage * screenWidth;
+            this.refs.scrollView.scrollTo({x: offsetX, y: 0, animated: true});
+        }, 3000);
+    }
+
+
