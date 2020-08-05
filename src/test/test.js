@@ -1,8 +1,12 @@
-
-let a = '-1'
-let b = parseInt(a);
-// console.log(a)
-// console.log(b)
-let type =  Object.prototype.toString.call(b)
-console.log(type)
-console.log(type==='Number')
+function sum(...theArgs) {
+    return theArgs.reduce((a, c) => {
+      return a + c;
+    });
+  }
+  
+  console.log(sum(1, 2, 3));
+  // expected output: 6
+  
+  console.log(sum(1, 2, 3, 4));
+  // expected output: 10
+  
