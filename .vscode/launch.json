@@ -6,6 +6,13 @@
     "console":"none",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "android",
             "name": "Android",
             "request": "launch",
