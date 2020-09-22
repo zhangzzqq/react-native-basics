@@ -58,7 +58,10 @@ import 'react-native-gesture-handler';
 // import App from './src/react_native移动开发实战/chapter7/7.3/7.3.4/官方示例/CarouselPage'
 // import App from './src/react_native移动开发实战/chapter8/8.1/8.1.3/AsyncPage'
 // import App from './src/test/testhtmlview'
-import App from './src/flexLayout/test6'
+// import App from './src/flexLayout/test6'
+// import App from './src/statusbar/App'
+import App from './src/counttime/CountDown'
+// import App from './src/focus/focus'
 // import App from './src/react_native移动开发实战/通信/FatherToSon2'
 
 AppRegistry.registerComponent(appName, () => App);

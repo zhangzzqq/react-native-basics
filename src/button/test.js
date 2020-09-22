@@ -69,7 +69,19 @@ const styles = StyleSheet.create({
     touchButtonText: {
         color: 'white',
         textAlign: 'center',
+    },
+    test:{
+        color:'#FA7480'
+    }, test1:{
+        color:'#F5A623'
+    }, test2:{
+        color:'#82E485'
+    } ,test3:{
+        color:'#1BD0AB'
+    } ,test4:{
+        color:'#000'
     }
+   
 });
 
 AppRegistry.registerComponent('ButtonView', ()=> ButtonView);
