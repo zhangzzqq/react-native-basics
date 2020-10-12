@@ -1,36 +1,16 @@
 
-import React, { Component, PropTypes } from 'react';
-import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View,
-    TextInput,
-    TouchableOpacity
-} from 'react-native';
-import MyCountTime from './MyCountTime'
+// let a =null;
+let a ;
+// let a ={};
 
 
-
-
-export default class test extends Component {
-
-
-    render() {
-        return (
-
-            <View>
-
-                <Text>12</Text>
-
-                <MyCountTime timeLeft={150}>
-
-                </MyCountTime>
-
-            </View>
-        );
-    }
-
-
+if (a == null)
+{
+  console.log(a)
 }
+
+console.log("a2=="+a)
+// console.log(a)
+
+// console.log(Object.keys(a).length)
 

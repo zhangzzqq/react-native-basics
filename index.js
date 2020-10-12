@@ -60,8 +60,11 @@ import 'react-native-gesture-handler';
 // import App from './src/test/testhtmlview'
 // import App from './src/flexLayout/test6'
 // import App from './src/statusbar/App'
-import App from './src/counttime/CountDown'
+// import App from './src/counttime/CountDown'
+// import App from './src/variable/TabOne'
+// import App from './src/modal/ModalTest'
 // import App from './src/focus/focus'
 // import App from './src/react_native移动开发实战/通信/FatherToSon2'
+import App from './src/redux/App'
 
 AppRegistry.registerComponent(appName, () => App);
